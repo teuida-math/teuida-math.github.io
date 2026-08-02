@@ -185,18 +185,20 @@ const IC = {
 
 // 표시할 버튼 정의 (순서 = 화면 순서)
 const ITEMS = [
+  {group:"심화 학습 자료"},
+  {key:"library", cls:"primary", ico:IC.book, label:"심화 개념 학습지 자료실", sub:"인스타 개념 카드 원본 · 무료로 보기"},
+
   {group:"상담 · 문의"},
-  {key:"consult", cls:"primary", ico:IC.spark, label:"무료 상담 · 체험 신청", sub:"1분이면 신청 완료"},
-  {key:"kakao",   cls:"kakao",   ico:IC.chat,  label:"카카오톡 상담",        sub:"채널 @트이다수학"},
-  {key:"tel",     cls:"",        ico:IC.phone, label:"전화 문의",            sub:"", tel:true},
+  {key:"consult", cls:"", ico:IC.spark, label:"무료 상담 · 체험 신청", sub:"1분이면 신청 완료"},
+  {key:"kakao",   cls:"kakao", ico:IC.chat,  label:"카카오톡 상담",        sub:"채널 @트이다수학"},
+  {key:"tel",     cls:"",      ico:IC.phone, label:"전화 문의",            sub:"", tel:true},
 
   {group:"지점 안내"},
   {key:"yongho",   cls:"", ico:IC.clock, label:"용호점 수업 안내 · 시간표", sub:"남구 용호동"},
   {key:"centum",   cls:"", ico:IC.clock, label:"센텀점 수업 안내 · 시간표", sub:"해운대구 센텀"},
   {key:"location", cls:"", ico:IC.pin,   label:"오시는 길 (용호 · 센텀)",   sub:"주소 · 지도 보기"},
 
-  {group:"자료 · 소식"},
-  {key:"library",   cls:"", ico:IC.book,  label:"심화 학습지 자료 모음", sub:"인스타 개념 카드 원본"},
+  {group:"소식"},
   {key:"instagram", cls:"", ico:IC.insta, label:"인스타그램 @teuidamath", sub:"매주 새 개념 카드 업로드"}
 ];
 
