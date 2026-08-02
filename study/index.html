@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>심화 개념 자료실 | 트이다 수학학원</title>
+<meta name="description" content="트이다 수학학원 심화 개념 학습지 — 인스타 개념 카드의 원본 자료. 무료로 보실 수 있습니다.">
+<meta property="og:title" content="트이다 심화 개념 자료실">
+<meta property="og:description" content="인스타에서 소개한 심화 개념 학습지 모음.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --navy:#1B2A4A; --orange:#E8650A; --gold:#F2B544;
+    --paper:#f4f2ee; --line:#e4dfd4; --muted:#8a8578; --card:#fff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:'IBM Plex Sans KR',-apple-system,BlinkMacSystemFont,sans-serif;
+    background:var(--paper); color:var(--navy);
+    min-height:100vh; padding:32px 20px 44px;
+    -webkit-font-smoothing:antialiased; line-height:1.55;
+  }
+  .wrap{width:100%;max-width:520px;margin:0 auto;}
+
+  .back{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:13.5px;font-weight:500;color:var(--muted);
+    text-decoration:none;margin-bottom:20px;
+  }
+  .back:hover{color:var(--orange);}
+
+  .head{margin-bottom:26px;}
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.16em;
+    color:var(--orange);font-weight:500;text-transform:uppercase;
+  }
+  h1{font-size:27px;font-weight:700;letter-spacing:-.03em;margin:7px 0 10px;}
+  .lead{font-size:14.5px;color:#5c6472;line-height:1.6;}
+  .lead b{color:var(--navy);font-weight:600;}
+
+  .cards{display:flex;flex-direction:column;gap:15px;margin-top:8px;}
+  .sheet{
+    background:var(--card);border:1.5px solid var(--line);border-radius:16px;
+    padding:20px 20px 18px;transition:transform .14s ease,box-shadow .14s ease,border-color .14s;
+  }
+  .sheet:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(27,42,74,.09);border-color:#d5cfc0;}
+  .chip{
+    display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:-.01em;
+    color:var(--navy);background:#eef1f6;border-radius:20px;padding:4px 11px;margin-bottom:11px;
+  }
+  .chip .g{color:var(--orange);}
+  .sheet h3{font-size:18px;font-weight:700;letter-spacing:-.02em;line-height:1.3;margin-bottom:8px;}
+  .thesis{
+    font-size:13.5px;color:#5c6472;line-height:1.6;
+    border-left:3px solid var(--gold);padding-left:11px;margin-bottom:15px;
+  }
+  .thesis b{color:var(--orange);font-weight:600;}
+  .open{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:14.5px;font-weight:600;color:#fff;background:var(--navy);
+    border-radius:11px;padding:11px 17px;text-decoration:none;
+    transition:background .14s ease,transform .14s ease;
+  }
+  .open:hover{background:#25375e;transform:translateY(-1px);}
+  .open svg{width:17px;height:17px;}
+  .open .g{color:var(--gold);}
+
+  .note{
+    margin-top:26px;background:#fff;border:1px dashed var(--line);border-radius:14px;
+    padding:16px 18px;font-size:13px;color:#5c6472;line-height:1.65;
+  }
+  .note b{color:var(--navy);}
+  .note a{color:var(--orange);font-weight:600;text-decoration:none;}
+
+  .foot{text-align:center;margin-top:30px;padding-top:20px;border-top:1px solid var(--line);}
+  .foot .name{font-size:13.5px;font-weight:700;}
+  .foot .loc{margin-top:5px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);}
+
+  @media (prefers-reduced-motion:no-preference){
+    .anim{opacity:0;transform:translateY(12px);animation:rise .5s ease forwards;}
+    @keyframes rise{to{opacity:1;transform:none;}}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 트이다 수학학원 홈</a>
+
+    <div class="head anim">
+      <div class="eyebrow">STUDY · ADVANCED</div>
+      <h1>심화 개념 자료실</h1>
+      <p class="lead">인스타그램 개념 카드의 <b>원본 학습지</b>입니다. 학생들이 매년 같은 자리에서 걸리는
+      개념적 함정을, <b>왜 틀리는지의 구조</b>로 정리했습니다. 무료로 보실 수 있어요.</p>
+    </div>
+
+    <div class="cards" id="cards"></div>
+
+    <div class="note anim" style="animation-delay:.35s">
+      <b>해설·교사용은 수업에서 제공합니다.</b> 위 자료는 학생용(문제·개념)이며,
+      풀이 해설과 교사용 운영 자료는 수업 등록 시 함께 드립니다.
+      제대로 끝내고 싶다면 <a href="../">프로필 홈</a>에서 무료 상담을 신청하세요.
+    </div>
+
+    <div class="foot anim" style="animation-delay:.4s">
+      <div class="name">트이다 수학학원</div>
+      <div class="loc">TEUIDA MATH · BUSAN</div>
+    </div>
+  </div>
+
+<script>
+const SHEETS = [
+  { subject:"미적분Ⅰ", grade:"고2", tag:"미분계수",
+    title:"미분계수, 만들어 쓰는 법",
+    thesis:"정의 형태로 <b>바꿀 수는 있다 — 단, 미분가능이 전제일 때만.</b> 극한을 미분계수로 바꾸는 기술과, 그 기술이 통하지 않는 조건.",
+    file:"derivative-limit_student.pdf" },
+
+  { subject:"미적분Ⅰ", grade:"고2", tag:"함수의 연속",
+    title:"불연속을 덮는 법",
+    thesis:"불연속함수도 연속함수를 곱하면 연속이 될 수 있다 — 곱하는 쪽이 <b>0이 되는 속도로 이겨야</b> 한다.",
+    file:"continuity-product_student.pdf" },
+
+  { subject:"공통수학2", grade:"고1", tag:"도형의 이동",
+    title:"합성이동 — 순서와 자리",
+    thesis:"이동은 <b>점에 하는 일</b>. 부호는 식의 자리가 아니라 <b>축(변수)</b>에 붙는다. 순서를 바꾸면 결과가 달라진다.",
+    file:"composite-move_student.pdf" },
+
+  { subject:"공통수학2", grade:"중3~고1", tag:"도형의 이동 · 기본",
+    title:"도형의 이동 — 순서와 부호",
+    thesis:"대칭이동은 <b>문자 바꿔치기</b>. 조심할 건 딱 둘 — 순서, 그리고 부호가 붙는 축.",
+    file:"move-basic_student.pdf" },
+];
+
+const PDFIC = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>';
+
+const root = document.getElementById('cards');
+let d = 0.06;
+SHEETS.forEach(s=>{
+  const el = document.createElement('div');
+  el.className = 'sheet anim';
+  el.style.animationDelay = d.toFixed(2)+'s'; d += 0.06;
+  el.innerHTML =
+    `<span class="chip">${s.subject} <span class="g">·</span> ${s.tag} <span class="g">·</span> ${s.grade}</span>`+
+    `<h3>${s.title}</h3>`+
+    `<p class="thesis">${s.thesis}</p>`+
+    `<a class="open" href="${s.file}" target="_blank" rel="noopener">`+
+      `<span class="g">${PDFIC}</span>학생용 PDF 열기</a>`;
+  root.appendChild(el);
+});
+</script>
+</body>
+</html>
