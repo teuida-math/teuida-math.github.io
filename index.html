@@ -162,10 +162,11 @@
    ═══════════════════════════════════════════════════════════════ */
 const CONFIG = {
   consult:   "https://teuida-app.vercel.app/consult",     // 무료 상담·체험 신청 (트이다 앱)
-  kakao:     "https://pf.kakao.com/_xnxiBGn",             // 카카오톡 채널 @트이다수학
+  kakaoY:    "https://pf.kakao.com/_xnxiBGn",             // 카카오톡 채널 — 용호점 (@트이다수학)
+  kakaoC:    "https://pf.kakao.com/_xjlNBX",              // 카카오톡 채널 — 센텀점
   tel:       "010-3934-4479",                             // 전화번호
-  yongho:    "https://teuida-math.github.io/2026-summer-yongho/",  // 용호점 안내·시간표
-  centum:    "https://teuida-math.github.io/2026-summer-centum/",  // 센텀점 안내·시간표
+  yongho:    "https://teuida-math.github.io/yongho/",  // 용호점 2학기 안내·시간표
+  centum:    "https://teuida-math.github.io/centum/",  // 센텀점 2학기 안내·시간표
   location:  "https://teuida-app.vercel.app/location",    // 오시는 길 (용호·센텀 주소·지도)
   library:   "study/",   // 심화 학습지 공개 자료실
   instagram: "https://instagram.com/teuidamath"           // 인스타 핸들 (확인 필요)
@@ -190,7 +191,8 @@ const ITEMS = [
 
   {group:"상담 · 문의"},
   {key:"consult", cls:"", ico:IC.spark, label:"무료 상담 · 체험 신청", sub:"1분이면 신청 완료"},
-  {key:"kakao",   cls:"kakao", ico:IC.chat,  label:"카카오톡 상담",        sub:"채널 @트이다수학"},
+  {key:"kakaoY",  cls:"kakao", ico:IC.chat,  label:"카카오톡 상담 · 용호점", sub:"남구 용호동"},
+  {key:"kakaoC",  cls:"kakao", ico:IC.chat,  label:"카카오톡 상담 · 센텀점", sub:"해운대구 센텀"},
   {key:"tel",     cls:"",      ico:IC.phone, label:"전화 문의",            sub:"", tel:true},
 
   {group:"지점 안내"},
